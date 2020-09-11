@@ -1,7 +1,15 @@
 body {
   background-color: #fcf6e9;
-  padding: 20px;
+  padding: 0;
   margin: 0;
+}
+span {
+  font-size: 12rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+.logo {
+  font-size: 28px;
 }
 h1,
 h2,
@@ -14,12 +22,11 @@ p {
 }
 h1 {
   font-family: "Montserrat Alternates", sans-serif;
-  padding-left: 25px;
+  padding: 10px;
 }
-.headers {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+ul li h1 {
+}
+ul.header {
 }
 ul.header li {
   display: inline;
@@ -27,13 +34,13 @@ ul.header li {
   margin: 0;
 }
 ul.header {
-  background-color: #e8d9b8;
-  padding: 0;
+  background-color: #333;
+  margin: 0;
   border-radius: 2px;
-  padding-left: 25px;
+  padding: 10px;
 }
 ul.header li a {
-  color: #012e2bda;
+  color: #fcf6e9;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
@@ -56,7 +63,7 @@ ul.header li a:hover {
   margin: 0;
 }
 .content li {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .picture {
   size: 50vw;
@@ -77,4 +84,33 @@ img {
 .Camaro img {
   width: 66%;
   box-shadow: 20px, #399b81;
+}
+
+@media (max-width: 500px) {
+  ul {
+    display: grid;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+  }
+  ul a,
+  .logo {
+    grid-auto-rows: 1fr;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    line-height: 1px;
+  }
+  li {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-bottom: solid 3px #fcf6e9;
+  }
+  .header {
+    height: 25vh;
+    padding: 0;
+    margin: 0;
+  }
 }
