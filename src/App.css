@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+body {
+  background-color: #fcf6e9;
+  padding: 20px;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+ul,
+li {
+  font-family: "Montserrat Alternates", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-family: "Raleway", sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  padding-left: 25px;
+}
+.headers {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #e8d9b8;
+  padding: 0;
+  border-radius: 2px;
+  padding-left: 25px;
+}
+ul.header li a {
+  color: #012e2bda;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  border: solid 2px #4d88ac00;
+}
+.active {
+}
+ul.header li a:hover {
+  border-bottom: solid 2px #4d88ac;
+}
+.content {
+  background-color: #fcf6e9;
+  padding: 20px;
+  border-radius: 2px;
+  width: 100%;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+.picture {
+  size: 50vw;
+}
+.corvette {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+img {
+  width: 66%;
+}
+.Camaro {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Camaro img {
+  width: 66%;
+  box-shadow: 20px, #399b81;
 }
